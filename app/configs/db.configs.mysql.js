@@ -2,7 +2,7 @@ const mysql = require('mysql');
 const logger = require('../common/logger')('db.configs.mysql');
 
 const pool = mysql.createPool({
-  host: process.env.MYSQL_DATABASE_HOST,
+  host: process.env.MYSQL_DATABASE_HOST || "bijlify-v2",
   user: process.env.MYSQL_DATABASE_USERNAME,
   password: process.env.MYSQL_DATABASE_PASSWORD,
   database: process.env.MYSQL_DATABASE_NAME,
