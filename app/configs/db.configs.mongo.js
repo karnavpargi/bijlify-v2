@@ -1,7 +1,7 @@
 const { MongoClient } = require('mongodb');
 const logger = require('../common/logger')('db.configs.mongo');
 
-const client = new MongoClient(process.env.MONGO_DATABASE_HOST);
+const client = new MongoClient(process.env.MONGO_DATABASE_HOST || "bijlify-v2");
 client.connect();
 
 client.on('close', () => {
