@@ -1,4 +1,4 @@
-# bijlify-demo
+# bijlify-v2 API
 
 I have initially created a demo for bijlify Mobile Application. 
 
